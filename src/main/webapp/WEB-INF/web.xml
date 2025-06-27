@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+	<!-- Register Servlet -->
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.bookstore.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Login Servlet -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.bookstore.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Add Skill Servlet -->
+	<servlet>
+		<servlet-name>AddSkillServlet</servlet-name>
+		<servlet-class>com.bookstore.AddSkillServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddSkillServlet</servlet-name>
+		<url-pattern>/AddSkillServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- View Skill Servlet -->
+	<servlet>
+		<servlet-name>ViewSkillServlet</servlet-name>
+		<servlet-class>com.bookstore.ViewSkillServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewSkillServlet</servlet-name>
+		<url-pattern>/ViewSkillServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Remove from Cart Servlet -->
+	<servlet>
+		<servlet-name>RemoveFromCartServlet</servlet-name>
+		<servlet-class>com.bookstore.RemoveFromCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveFromCartServlet</servlet-name>
+		<url-pattern>/RemoveFromCartServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- View Books Servlet -->
+	<servlet>
+		<servlet-name>ViewBooksServlet</servlet-name>
+		<servlet-class>com.bookstore.ViewBooksServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewBooksServlet</servlet-name>
+		<url-pattern>/ViewBooksServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Buy Book Servlet -->
+	<servlet>
+		<servlet-name>BuyBookServlet</servlet-name>
+		<servlet-class>com.bookstore.BuyBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyBookServlet</servlet-name>
+		<url-pattern>/BuyBookServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Profile Servlet -->
+	<servlet>
+		<servlet-name>ProfileServlet</servlet-name>
+		<servlet-class>com.bookstore.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/ProfileServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Download Bill Servlet -->
+	<servlet>
+		<servlet-name>DownloadBillServlet</servlet-name>
+		<servlet-class>com.bookstore.DownloadBillServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DownloadBillServlet</servlet-name>
+		<url-pattern>/DownloadBillServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Pay Now Servlet -->
+	<servlet>
+		<servlet-name>PayNowServlet</servlet-name>
+		<servlet-class>com.bookstore.PayNowServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PayNowServlet</servlet-name>
+		<url-pattern>/PayNowServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Logout Servlet -->
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.bookstore.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Welcome Page -->
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
